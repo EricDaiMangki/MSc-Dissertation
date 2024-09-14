@@ -9,7 +9,25 @@ Sentiment Analysis Models: Comparisons of NLP models (TextBlob, VADER) and LLMs 
 Magnitude Prediction: Introduction of stock return classification based on sentiment intensity (small, medium, and large price movements).
 Fine-Tuning: Analysis of how fine-tuning models can affect the performance for financial text data.
 
+## Usage
+1. Sentiment Analysis
+You can apply various sentiment analysis models to your data:
 
-├── data/                      # Folder for storing tweet and stock return data
-├── notebooks/                 # Jupyter notebooks with code and analysis
-├── README.md                  # Project documentation (this file)
+TextBlob for basic lexicon-based sentiment scoring.
+VADER for handling social media-specific sentiment features.
+BERT for more advanced contextual understanding of sentiment.
+
+2. Magnitude Prediction
+A unique aspect of this project is the analysis of magnitude of stock returns. The stock returns are categorized into small, medium, and large movements, both positive and negative. These categories are used to evaluate the impact of sentiment on the scale of stock price changes.
+
+3. Fine-Tuning
+The project also allows for fine-tuning of NLP models like VADER and TextBlob to improve performance in financial contexts.
+
+## Results
+The project compares the performance of the models in predicting 1-day, 3-day, and 7-day stock returns, focusing on both direction and magnitude. The Random Forest classifier is used to assess the predictive power of each sentiment model.
+
+Key findings include:
+
+BERT outperformed both TextBlob and VADER in short-term predictions (1-day return).
+Fine-tuning provided modest improvements but did not consistently outperform the non-tuned versions.
+The analysis of return magnitude provides deeper insights into how sentiment affects not just the direction but also the scale of stock price movements.
