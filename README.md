@@ -8,3 +8,8 @@ The primary goal is to determine which models perform best in sentiment analysis
 Sentiment Analysis Models: Comparisons of NLP models (TextBlob, VADER) and LLMs (BERT) for sentiment classification.
 Magnitude Prediction: Introduction of stock return classification based on sentiment intensity (small, medium, and large price movements).
 Fine-Tuning: Analysis of how fine-tuning models can affect the performance for financial text data.
+
+
+├── data/                      # Folder for storing tweet and stock return data
+├── notebooks/                 # Jupyter notebooks with code and analysis
+├── README.md                  # Project documentation (this file)
